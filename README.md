@@ -17,7 +17,7 @@ The system is highly scalable and can be expanded by adding metrics from other A
 
 *Note: This architecture was designed for use in a local environment running in Docker containers. If deployed to production, configuration files should be adjusted for security and modified communication.*
 
-![Architecture Diagram](./architecture-diagram.png) *(<- Replace with your architecture image)*
+![Architecture Diagram](./architecture-diagram.png) 
 
 ### Components:
 * **API**: Generates logs and metrics using `winston` and `prom-client` libraries.
@@ -333,9 +333,9 @@ During the first start, you need to create an admin account. Grafana is availabl
 ### Data Sources
 To create a connection with Prometheus and Loki, navigate to the "Add new connection" tab and select the appropriate data source. You will need to provide the addresses for Loki (`http://loki:3100`) and Prometheus (`http://prometheus:9090`).
 
-![Grafana Data Sources](./grafana-datasources.png) *(<- Replace with your image)*
+![Grafana Data Sources](./grafana-datasources.png) 
 
 ### Dashboards & Visualizations
 The dashboards section is where panels with visualizations are created. To retrieve data, queries are built in **PromQL** (for Prometheus metrics) or **LogQL** (for Loki logs).
 
-![Grafana Dashboard Example](./grafana-dashboard.png) *(<- Replace with your image)*
+![Grafana Dashboard Example](./grafana-dashboard.png) 
